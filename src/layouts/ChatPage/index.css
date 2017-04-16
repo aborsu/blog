@@ -1,0 +1,20 @@
+.container {
+  background: linear-gradient(#40A497, #7FC6BC);
+  height: 10vh;
+  padding: 1rem 0;
+}
+
+.conversation {
+  min-height: 50vh;
+  max-width: 50pc;
+  padding: 1rem 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  margin: 4rem 0;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+}
