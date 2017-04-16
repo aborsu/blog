@@ -3,6 +3,7 @@
 }
 
 .header {
+  background: black;
   position: absolute;
   /* stretch */
   left: 0;
@@ -51,4 +52,11 @@
   width: 14px;
   height: 14px;
   vertical-align: middle;
+
+  &:hover,
+  &:focus {
+    color: inherit;
+    opacity: 1;
+    border-bottom-color: var(--colorNeutralLight);
+  }
 }
