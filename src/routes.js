@@ -3,6 +3,7 @@ import { Route } from "react-router"
 import { PageContainer as PhenomicPageContainer } from "phenomic"
 
 import AppContainer from "./AppContainer"
+import ChatPage from "./layouts/ChatPage"
 import Page from "./layouts/Page"
 import PageError from "./layouts/PageError"
 import Homepage from "./layouts/Homepage"
@@ -12,6 +13,7 @@ const PageContainer = (props) => (
   <PhenomicPageContainer
     { ...props }
     layouts={{
+      ChatPage,
       Page,
       PageError,
       Homepage,

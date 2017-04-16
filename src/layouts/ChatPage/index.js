@@ -1,4 +1,4 @@
-import React, { PropTypes } from "react"
+import React from "react"
 
 import ElizaBot from 'elizabot';
 import Conversation from 'chat-template/dist/Conversation';
