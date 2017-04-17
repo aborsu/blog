@@ -2,12 +2,16 @@ import React from "react"
 
 import ElizaBot from 'elizabot';
 import Conversation from 'chat-template/dist/Conversation';
+import { BodyContainer } from "phenomic"
 
 import styles from "./index.css"
 
 const eliza = new ElizaBot();
 
 class ChatPage extends React.Component {
+  props: {
+    body: String
+  }
   constructor(props) {
     super(props);
     this.state = {
@@ -36,14 +40,17 @@ class ChatPage extends React.Component {
     return (
       <div>
         <div className={ styles.container } />
-        <div className={ styles.conversation } >
-          <Conversation messages={this.state.messages} turnOffLoop/>
-          <input
-            type="text"
-            width='100px'
-            onKeyPress={this.keyPress.bind(this)}
-            placeholder="Type your message here..."
-          />
+          <div className={ styles.text } >
+            <BodyContainer>{this.props.body}</BodyContainer>
+          </div>
+          <div className={ styles.conversation } >
+            <Conversation messages={this.state.messages} turnOffLoop/>
+            <input
+              type="text"
+              width='100px'
+              onKeyPress={this.keyPress.bind(this)}
+              placeholder="Type your message here..."
+            />
         </div>
       </div>
     )
