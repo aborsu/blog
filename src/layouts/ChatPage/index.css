@@ -1,8 +1,3 @@
-.container {
-  background: linear-gradient(#40A497, #7FC6BC);
-  height: 10vh;
-  padding: 1rem 0;
-}
 
 .conversation {
   min-height: 50vh;
